@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career — Sumant Bagri</title>
+    <meta name="description" content="Career history and experience of Sumant Bagri — Robotics & AI Software Engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-mark">SB</div>
+            Sumant Bagri
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="career.html" class="active">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="rant.html">Rant</a>
+            <a href="resume.html" class="nav-cta">Resume</a>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Experience & Education</p>
+        <h1>Career</h1>
+        <p>
+            A decade of engineering across robotics, computer vision, high-performance computing,
+            financial infrastructure, and applied machine learning — spanning three continents and
+            some of the world's most technically demanding environments.
+        </p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="section">
+    <div class="container">
+
+        <!-- Stats -->
+        <div class="career-stats">
+            <div class="stat-card fade-up">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card fade-up fade-up-delay-1">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-card fade-up fade-up-delay-2">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-card fade-up fade-up-delay-3">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Graduate Degrees</div>
+            </div>
+        </div>
+
+        <!-- ── OCADO TECHNOLOGY ── -->
+        <div class="company-block fade-up">
+            <div class="company-header">
+                <div class="company-logo co-ocado"><img src="assets/ocado_technology_logo.png" alt="Ocado Technology" /></div>
+                <div>
+                    <div class="company-name">Ocado Technology</div>
+                    <div class="company-location"><i class="fas fa-map-marker-alt"></i> Toronto, Canada</div>
+                </div>
+            </div>
+            <div class="company-roles">
+
+                <!-- SE II -->
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Software Engineering II, Product</span>
+                        <span class="role-period">Jul 2025 – Present</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Full-Time · Current Role</div>
+                    <ul class="role-achievements">
+                        <li>Led development of a modular 3D perception pipeline for a warehouse automation pick-and-place robot, achieving high throughput, reliability, and uptime while reducing operating costs. Built using the <strong>Kedro</strong> framework, enforcing atomic nodes as pure functions for maximum pipeline modularity.</li>
+                        <li>Integrated <strong>Mask2Former</strong> models with configurable versioning to dynamically load stable model versions onto the GPU, improving mean Average Precision (mAP) by <strong>30%</strong>.</li>
+                        <li>Implemented a vectorized solution for converting 2D pixel coordinates to 3D world coordinates, enabling <strong>constant-time lookups</strong>.</li>
+                        <li>Developed an end-to-end pick and place candidate generation pipeline optimized for packing efficiency, improving throughput by <strong>63%</strong> while achieving a <strong>92% autonomy rate</strong>.</li>
+                        <li>Implemented a Dockerized gRPC service as a highly performant, lightweight wrapper around the perception library, enabling swift integration with other product ecosystem components.</li>
+                        <li>Executed A/B testing of the perception service versus legacy software in a production-like environment, demonstrating significant improvements to throughput and cycle time.</li>
+                        <li>Designed and implemented low-latency, teleoperation software in <strong>ROS2 C++</strong> for an 80kg, 7-DoF robotic manipulator using an Xbox controller, reducing developer testing overhead by <strong>70%</strong> while enabling data collection for imitation learning.</li>
+                        <li>Conducted knowledge-sharing sessions with the broader organization and provided regular progress updates to project stakeholders.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">Go</span><span class="role-skill">C++</span><span class="role-skill">Kedro</span><span class="role-skill">Open3d</span><span class="role-skill">OpenCV</span><span class="role-skill">gRPC</span><span class="role-skill">ROS2</span><span class="role-skill">Docker</span><span class="role-skill">Nomad</span><span class="role-skill">Triton</span><span class="role-skill">Jira</span><span class="role-skill">CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- SE -->
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Software Engineer, Product</span>
+                        <span class="role-period">Jan 2024 – Jun 2025</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Full-Time · Promoted to SE II</div>
+                    <ul class="role-achievements">
+                        <li>Pioneered an <strong>OpenMP-parallelized 3D scene reconstruction</strong> solution in C++ using depth maps and point clouds in Open3D with efficient occupancy lookups via Octomaps. Deployed as a gRPC service containerized in Docker and orchestrated with Nomad. Also developed an offline replay utility tool for visual debugging of the pipeline.</li>
+                        <li>Designed and implemented a <strong>remote power-cycle system</strong> for active fleet robots. The system comprised a TypeScript frontend with a Golang backend gRPC service forwarding WSS requests through a gRPC-Modbus adapter to the ProtosX field I/O device. <strong>Eliminated 9,000+ hours of on-site manual intervention</strong>, improving problem escalation and resolution efficiency by 5×.</li>
+                        <li>Designed and implemented <strong>device drivers for IO-Link devices</strong> over Modbus TCP/IP, enabling the next generation of vacuum-based end-effectors. Implemented unary and streaming gRPC service endpoints for the gripper driver.</li>
+                        <li>Designed and implemented a gripper strength software tool in Jupyter notebooks for lab-testing analysis, <strong>improving hardware iteration velocity by 2×</strong>. Hosted on Google Colab for cross-platform access.</li>
+                        <li>Developed a novel, SKU-agnostic, <strong>brick-layer palletization algorithm</strong> in Python achieving &gt;90% packing efficiency while ensuring stacking stability. Developed an interactive PySide6 visualization tool for stacking output. Showcased at <strong>ProMat 2025</strong>.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">Go</span><span class="role-skill">C++</span><span class="role-skill">OpenMP</span><span class="role-skill">Open3d</span><span class="role-skill">OpenCV</span><span class="role-skill">gRPC</span><span class="role-skill">ROS2</span><span class="role-skill">Modbus TCP/IP</span><span class="role-skill">IO-Link</span><span class="role-skill">Docker</span><span class="role-skill">Nomad</span>
+                    </div>
+                </div>
+
+                <!-- Intern -->
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Robotics Software Engineer — Intern</span>
+                        <span class="role-period">May 2023 – Dec 2023</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Internship · Converted to Full-Time</div>
+                    <ul class="role-achievements">
+                        <li>Engineered a <strong>GPU-accelerated collision detection framework</strong> for 6-DOF robotic manipulators using NVIDIA PhysX SDK v5.2.1 and CUDA, achieving up to <strong>4× speedup</strong> over CPU baselines and reducing motion planning cycle times by up to <strong>99%</strong>.</li>
+                        <li>Implemented a high-performance C++ collision detection library integrating the PhysX rigid body pipeline — including broadphase sweep-and-prune and narrowphase GJK/EPA algorithms — directly into a production robotics motion planning stack via a custom abstraction layer.</li>
+                        <li>Benchmarked 3 physics engines (FCL, PhysX, Bullet3) across 6 simulation configurations with object counts up to 800,000, quantifying performance trade-offs across CPU/GPU execution modes, geometry representations, and scene complexity levels.</li>
+                        <li>Optimized batch collision query throughput by identifying <strong>GPU break-even thresholds</strong> (~12K objects for primitives, ~128 for mesh geometries), enabling data-driven hardware deployment decisions for real-time inverse kinematics and sampling-based motion planners (RRT, PRM).</li>
+                        <li>Developed OpenGL-based 3D simulation environments for collision scene visualization and validation, integrating custom STL/OBJ mesh loaders for real-world robot gripper and environment geometry with support for convex hull, concave triangle mesh, and SDF representations.</li>
+                        <li>Reduced false positive collision rates by characterizing <strong>convex hull approximation precision</strong> against exact triangle mesh geometry, informing geometry fidelity trade-offs in path planning pipelines for pick-and-place eCommerce robotics.</li>
+                        <li>Leveraged <strong>CUDA memory buffers, parallel kernel launch pipelines</strong>, and the Temporal Gauss-Seidel constraint solver within PhysX to accelerate rigid body simulation, achieving <strong>65–70× CPU speedup</strong> for high-density environments using kinematic and static rigid body configurations.</li>
+                        <li>Prototyped an <strong>MVP collision detection plugin in C++</strong> deployed across Kindred AI's robotic product suite (Ocado Group), with architecture extensible to ROS2 integration, mobile robotics, and human-robot interaction (HRI) scenarios.</li>
+                        <li>Applied <strong>SIMD/SIMT parallel computing</strong> principles to collision detection across 120-frame simulation runs, demonstrating scalability relevant to real-time systems, autonomous vehicles, and path planning for articulated multi-link manipulators.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">C++</span><span class="role-skill">CUDA</span><span class="role-skill">PhysX</span><span class="role-skill">Bullet3</span><span class="role-skill">OpenGL</span><span class="role-skill">ROS2</span><span class="role-skill">MoveIt2</span><span class="role-skill">Docker</span><span class="role-skill">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── FLOW TRADERS ── -->
+        <div class="company-block fade-up">
+            <div class="company-header">
+                <div class="company-logo co-flow"><img src="assets/ft_logo.jpeg" alt="Flow Traders" /></div>
+                <div>
+                    <div class="company-name">Flow Traders</div>
+                    <div class="company-location"><i class="fas fa-map-marker-alt"></i> Hong Kong</div>
+                </div>
+            </div>
+            <div class="company-roles">
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Trading Operations Engineer</span>
+                        <span class="role-period">Oct 2020 – Apr 2022</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Full-Time</div>
+                    <ul class="role-achievements">
+                        <li>Deployed and maintained a co-located <strong>Native Ordering Platform and Market Data Platform</strong> built in C++, managing exchange-specific configurations across bare-metal servers using Ansible-based IaC deployments, ensuring reproducible and auditable release pipelines across production environments.</li>
+                        <li>Diagnosed TCP/UDP network anomalies — including missed/duplicated market data packets, order insertion failures, and cancellation race conditions — using Wireshark and tcpdump, <strong>reducing feed inconsistencies and order routing errors</strong> impacting real-time P&amp;L.</li>
+                        <li>Optimized end-to-end software execution latency through <strong>kernel bypass networking (OpenOnload/DPDK), CPU core isolation via isolcpus, and IRQ affinity pinning</strong>, eliminating OS scheduling jitter and achieving deterministic sub-microsecond processing latency critical to HFT market-making.</li>
+                        <li>Reduced hardware footprint by <strong>~50%</strong> by deploying dual independent ordering instances on a single bare-metal server using NUMA-aware process pinning, binding each instance to a dedicated NUMA node with local memory affinity.</li>
+                        <li>Maintained exchange connectivity and order routing infrastructure across <strong>20+ global venues</strong> including HKEX, SGX, Eurex, and CME, coordinating certification testing and UAT cycles for algorithmic trading across binary protocols including OTP-C and Reach/Titan.</li>
+                        <li>Architected an <strong>enterprise-grade workflow automation platform</strong> using Apache Airflow on Kubernetes, supporting futures rollover execution, Bloomberg price ingestion, and end-of-day trade analysis across 15+ scheduled DAG pipelines. Secured with RBAC authenticated via LDAP and Git-synced sidecar container for continuous DAG version control.</li>
+                        <li>Collaborated with FPGA engineers and quantitative traders to deploy and validate an <strong>FPGA-based ultra-low latency ordering platform</strong> on HKEX, achieving nanosecond-level wire-to-wire latency via SmartNIC integration and hardware-accelerated order encoding.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">Docker</span><span class="role-skill">Kubernetes</span><span class="role-skill">Kafka</span><span class="role-skill">Airflow</span><span class="role-skill">Ansible</span><span class="role-skill">TCP/UDP</span><span class="role-skill">Wireshark</span><span class="role-skill">OpenOnload</span><span class="role-skill">DPDK</span><span class="role-skill">ELK</span><span class="role-skill">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── DISNEY ── -->
+        <div class="company-block fade-up">
+            <div class="company-header">
+                <div class="company-logo co-disney"><img src="assets/walt_disney_logo.png" alt="The Walt Disney Company" /></div>
+                <div>
+                    <div class="company-name">The Walt Disney Company</div>
+                    <div class="company-location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</div>
+                </div>
+            </div>
+            <div class="company-roles">
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Applied ML Engineer — User Modeling, Internship</span>
+                        <span class="role-period">May 2018 – Jul 2018</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Internship</div>
+                    <ul class="role-achievements">
+                        <li>Automated end-to-end data ingestion and preprocessing pipelines using Python and MySQL, orchestrating calls across multiple REST APIs to consolidate fragmented sales and user behavior datasets into a unified analytical datastore, <strong>eliminating manual daily reporting overhead</strong>.</li>
+                        <li>Performed targeted feature extraction from large-scale remote databases using <strong>Google BigQuery</strong>, optimizing query performance through selective column projection and partition pruning on <strong>multi-terabyte datasets</strong>.</li>
+                        <li>Engineered an ML pipeline using <strong>scikit-learn</strong> incorporating PCA-based dimensionality reduction, feature selection, and supervised classification models to predict specific user behaviors, directly informing distribution strategy and stakeholder decision-making for Disney Interactive products.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">MySQL</span><span class="role-skill">Google BigQuery</span><span class="role-skill">scikit-learn</span><span class="role-skill">PCA</span><span class="role-skill">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── FOCUS ANALYTICS ── -->
+        <div class="company-block fade-up">
+            <div class="company-header">
+                <div class="company-logo co-focus"><img src="assets/focus_analytics_logo.jpeg" alt="FOCUS Analytics" /></div>
+                <div>
+                    <div class="company-name">FOCUS Analytics</div>
+                    <div class="company-location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</div>
+                </div>
+            </div>
+            <div class="company-roles">
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Distributed Systems Engineer — Internship</span>
+                        <span class="role-period">May 2017 – Aug 2017</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Internship</div>
+                    <ul class="role-achievements">
+                        <li>Engineered <strong>distributed data mining and analytics pipelines</strong> processing terabytes of user location data across 5 enterprise clients with user databases ranging from 250K to 3M+ records, driving SDK performance improvements and indoor localization accuracy.</li>
+                        <li>Designed a <strong>7-dimensional classification framework</strong> to benchmark and compare two SDK versions across client deployments, delivering actionable insights into location pattern detection and signal reliability.</li>
+                        <li>Implemented user residence prediction using <strong>DBSCAN clustering</strong> with time-period parameterization on raw Wi-Fi positioning data, enabling high-accuracy behavioral segmentation for targeted marketing recommendations.</li>
+                        <li>Optimized MapReduce job pipelines on Disco (distributed computing framework), <strong>reducing end-to-end job runtime by 35%</strong> through output schema optimization and data locality-aware task scheduling.</li>
+                        <li>Developed scalable batch processing workflows using the <strong>MapReduce paradigm</strong> across a multi-node cluster, enabling parallel analysis of high-volume indoor mobility datasets.</li>
+                        <li>Synthesized analytical findings into data-driven visualizations and authored a technical blog for the firm, communicating location intelligence insights to non-technical stakeholders.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">Python</span><span class="role-skill">MapReduce</span><span class="role-skill">Disco</span><span class="role-skill">scikit-learn</span><span class="role-skill">pandas</span><span class="role-skill">DBSCAN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── IBM ── -->
+        <div class="company-block fade-up">
+            <div class="company-header">
+                <div class="company-logo co-ibm"><img src="assets/ibm_logo.jpeg" alt="IBM" /></div>
+                <div>
+                    <div class="company-name">IBM</div>
+                    <div class="company-location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</div>
+                </div>
+            </div>
+            <div class="company-roles">
+                <div class="role-entry">
+                    <div class="role-header">
+                        <span class="role-title">Cognitive Cloud Application Developer — Internship</span>
+                        <span class="role-period">Nov 2016 – Jan 2017</span>
+                    </div>
+                    <div class="role-type"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Internship</div>
+                    <ul class="role-achievements">
+                        <li>Developed and deployed <strong>cloud-native applications on IBM Bluemix (PaaS)</strong> using Cloud Foundry, leveraging integrated DevOps pipelines for end-to-end build, test, and deployment workflows on IBM's managed cloud infrastructure.</li>
+                        <li>Integrated <strong>IBM Watson cognitive APIs</strong> — including Personality Insights and Tradeoff Analytics — into Java-based applications, enabling AI-driven behavioral profiling and multi-criteria decision optimization for real-world use cases.</li>
+                    </ul>
+                    <div class="role-skills">
+                        <span class="role-skill">IBM Bluemix</span><span class="role-skill">Cloud Foundry CLI</span><span class="role-skill">IBM Watson APIs</span><span class="role-skill">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── EDUCATION ── -->
+        <div class="fade-up" style="margin-top: 64px;">
+            <div class="section-header">
+                <p class="eyebrow">Academic Background</p>
+                <h2>Education</h2>
+                <span class="section-divider"></span>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card fade-up fade-up-delay-1">
+                    <div class="edu-logo-header">
+                        <img src="assets/uoft_logo.png" alt="University of Toronto" class="edu-logo" />
+                        <div class="edu-institution">University of Toronto</div>
+                    </div>
+                    <div class="edu-degree">Master of Science in Applied Computing (MScAC)</div>
+                    <div class="edu-conc">Concentration: Artificial Intelligence</div>
+                    <div class="edu-meta">
+                        <span class="edu-meta-item"><i class="far fa-calendar"></i> Sep 2022 – Dec 2023</span>
+                        <span class="edu-meta-item"><i class="fas fa-map-marker-alt"></i> Toronto, Canada</span>
+                    </div>
+                    <div class="edu-gpa">GPA: 4.0 / 4.0</div>
+                    <div class="coursework">
+                        <div class="coursework-title">Relevant Coursework</div>
+                        <div class="course-tags">
+                            <span class="course-tag">Intro to Machine Learning</span>
+                            <span class="course-tag">Neural Networks & Deep Learning</span>
+                            <span class="course-tag">Computational Imaging</span>
+                            <span class="course-tag">Intro to Mobile Robotics</span>
+                            <span class="course-tag">Visual & Mobile Computing Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card fade-up fade-up-delay-2">
+                    <div class="edu-logo-header">
+                        <img src="assets/iitb_logo.jpg" alt="IIT Bombay" class="edu-logo" />
+                        <div class="edu-institution">Indian Institute of Technology, Bombay</div>
+                    </div>
+                    <div class="edu-degree">B.Tech + M.Tech in Mechanical Engineering (Dual Degree)</div>
+                    <div class="edu-conc">Concentration: Applied Machine Learning · Minor: Electrical Engineering</div>
+                    <div class="edu-meta">
+                        <span class="edu-meta-item"><i class="far fa-calendar"></i> Aug 2015 – Aug 2020</span>
+                        <span class="edu-meta-item"><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                    </div>
+                    <div class="edu-gpa">GPA: 8.6 / 10.0</div>
+                    <div class="coursework">
+                        <div class="coursework-title">Relevant Coursework</div>
+                        <div class="course-tags">
+                            <span class="course-tag">High Performance Scientific Computing</span>
+                            <span class="course-tag">Engineering Data Mining & Applications</span>
+                            <span class="course-tag">Algorithms & Data Structures</span>
+                            <span class="course-tag">Microprocessors & Automatic Control</span>
+                            <span class="course-tag">Control of Nonlinear Dynamical Systems</span>
+                            <span class="course-tag">Probability & Random Processes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <p>© 2025 Sumant Bagri. Built with care.</p>
+        <p>Toronto, Canada 🍁</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

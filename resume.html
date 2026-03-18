@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume — Sumant Bagri</title>
+    <meta name="description" content="Resume of Sumant Bagri — Robotics & AI Software Engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body { overflow: hidden; height: 100vh; }
+        .resume-section { height: 100vh; display: flex; flex-direction: column; }
+        .resume-nav-wrapper {
+            flex-shrink: 0;
+        }
+        .resume-toolbar {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+        .resume-toolbar-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .resume-toolbar-left .icon {
+            width: 32px; height: 32px;
+            background: rgba(239,68,68,0.15);
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fc8181;
+            font-size: 0.9rem;
+        }
+        .resume-toolbar-title { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+        .resume-toolbar-sub { font-size: 0.75rem; color: var(--text-3); }
+        .resume-toolbar-actions { display: flex; gap: 8px; }
+        .resume-container-wrap {
+            flex: 1;
+            overflow: hidden;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .resume-embed-wrap {
+            flex: 1;
+            width: 100%;
+            overflow: hidden;
+        }
+        .resume-embed-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        /* Placeholder shown when PDF not yet set */
+        .resume-placeholder-full {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, #0d1117 0%, #0f1629 100%);
+            text-align: center;
+            padding: 40px;
+            gap: 20px;
+        }
+        .placeholder-icon {
+            width: 80px; height: 80px;
+            background: rgba(239,68,68,0.1);
+            border: 1px solid rgba(239,68,68,0.25);
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem;
+            color: #fc8181;
+        }
+        .placeholder-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .placeholder-desc {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            max-width: 440px;
+            line-height: 1.75;
+        }
+        .placeholder-code {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-3);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 20px;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+        .placeholder-code span { color: var(--blue-light); }
+        .placeholder-code .comment { color: var(--text-3); }
+        .placeholder-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            background: rgba(245,158,11,0.1);
+            border: 1px solid rgba(245,158,11,0.3);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--amber);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" style="position: relative;">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-mark">SB</div>
+            Sumant Bagri
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="career.html">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="rant.html">Rant</a>
+            <a href="resume.html" class="active nav-cta">Resume</a>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="resume-section">
+    <!-- Toolbar -->
+    <div class="resume-toolbar">
+        <div class="resume-toolbar-left">
+            <div class="icon"><i class="fas fa-file-pdf"></i></div>
+            <div>
+                <div class="resume-toolbar-title">Sumant Bagri — Resume</div>
+                <div class="resume-toolbar-sub">assets/resume.pdf</div>
+            </div>
+        </div>
+        <div class="resume-toolbar-actions">
+            <a href="assets/resume.pdf" download="Sumant_Bagri_Resume.pdf" class="btn-primary" style="padding: 8px 16px; font-size: 0.8rem;">
+                <i class="fas fa-download"></i> Download
+            </a>
+            <a href="assets/resume.pdf" target="_blank" class="btn-secondary" style="padding: 8px 16px; font-size: 0.8rem;">
+                <i class="fas fa-external-link-alt"></i> Open in New Tab
+            </a>
+        </div>
+    </div>
+
+    <!-- PDF Embed -->
+    <div class="resume-container-wrap">
+        <div class="resume-embed-wrap" id="pdfWrap">
+            <!-- Will be replaced with iframe if PDF exists, otherwise shows placeholder -->
+            <div class="resume-placeholder-full" id="pdfPlaceholder">
+                <div class="placeholder-badge">
+                    <i class="fas fa-clock"></i> Awaiting Resume
+                </div>
+                <div class="placeholder-icon">📄</div>
+                <div class="placeholder-title">Resume Coming Soon</div>
+                <p class="placeholder-desc">
+                    The resume PDF hasn't been added yet. Replace
+                    <code style="color: var(--blue-light); font-family: var(--font-mono);">assets/resume.pdf</code>
+                    with your actual resume file and this page will automatically
+                    render and offer a download option.
+                </p>
+                <div class="placeholder-code">
+                    <span class="comment"># To add your resume:</span><br/>
+                    <span>cp</span> /path/to/your_resume.pdf<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;SumantBagri.github.io/<span>assets/resume.pdf</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+    // Try to load the PDF; if it exists, replace placeholder with iframe
+    fetch('assets/resume.pdf', { method: 'HEAD' })
+        .then(res => {
+            if (res.ok) {
+                const wrap = document.getElementById('pdfWrap');
+                wrap.innerHTML = '<iframe src="assets/resume.pdf#toolbar=1&navpanes=0" title="Sumant Bagri Resume"></iframe>';
+            }
+        })
+        .catch(() => {
+            // Placeholder stays — PDF not found
+        });
+
+    // Fix navbar for this page (not fixed positioning)
+    document.querySelector('.navbar').style.position = 'relative';
+    document.querySelector('.navbar').style.height = 'var(--nav-h)';
+</script>
+</body>
+</html>

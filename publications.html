@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications — Sumant Bagri</title>
+    <meta name="description" content="Research publications by Sumant Bagri in manufacturing, machine learning, and micro-milling." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-mark">SB</div>
+            Sumant Bagri
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="career.html">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html" class="active">Publications</a>
+            <a href="rant.html">Rant</a>
+            <a href="resume.html" class="nav-cta">Resume</a>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Research</p>
+        <h1>Publications</h1>
+        <p>
+            Peer-reviewed journal publications in applied machine learning for manufacturing intelligence —
+            specifically neural network–based tool condition monitoring and remaining useful life prediction
+            in micro-milling processes.
+        </p>
+    </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<main class="section">
+    <div class="container">
+
+        <!-- ── PUBLICATION 1 ── -->
+        <article class="pub-card fade-up">
+            <div class="pub-card-inner">
+                <div class="pub-content">
+                    <div class="pub-journal-badge">
+                        <i class="fas fa-book-open"></i> Journal of Manufacturing Processes
+                    </div>
+                    <h2 class="pub-title">
+                        Tool Wear and Remaining Useful Life Prediction in Micro-Milling
+                        Along Complex Tool Paths Using Neural Networks
+                    </h2>
+                    <p class="pub-authors">
+                        <span class="self">Sumant Bagri</span>,
+                        Ashish Manwar, Alwin Varghese, Soham Mujumdar, Suhas S. Joshi
+                    </p>
+                    <p class="pub-meta">
+                        <span><i class="fas fa-journal-whills"></i> Vol. 71, pp. 679–698, Springer</span>
+                        <span><i class="far fa-calendar-alt"></i> November 1, 2021</span>
+                        <span><i class="fas fa-fingerprint"></i> DOI: 10.1016/j.jmapro.2021.09.055</span>
+                    </p>
+                    <details class="pub-abstract-section" open>
+                        <summary class="pub-abstract-toggle">
+                            <i class="fas fa-align-left" style="margin-right: 6px; font-size: 0.7rem;"></i> Abstract
+                        </summary>
+                        <p class="pub-abstract-text">
+                            Conventional tool wear research in micro-milling had been limited to straight tool paths,
+                            yet industrial applications frequently demand machining along complex geometries where tool
+                            failure risk increases significantly. This paper addresses that gap by developing a
+                            data-driven framework — using force, acceleration, and vibration velocity signals captured
+                            via a triaxial Kistler dynamometer, accelerometer, and laser vibrometer — to predict tool
+                            wear state and remaining useful life under varying tool path radii in micro-end-milling.
+                            Tool wear was classified into three regions based on defined criteria, and intermediate
+                            optical images of the tool face were captured alongside static radial tool runout
+                            measurements. The models — encompassing ANNs and Deep Belief Networks — achieved
+                            <strong>93–99% accuracy for RUL prediction</strong>, establishing one of the first
+                            validated frameworks for TCM under industrially realistic complex-path micro-milling conditions.
+                        </p>
+                    </details>
+                    <div class="pub-keywords">
+                        <span class="pub-keyword">Remaining Useful Life (RUL)</span>
+                        <span class="pub-keyword">Micro-Milling</span>
+                        <span class="pub-keyword">Tool Condition Monitoring (TCM)</span>
+                        <span class="pub-keyword">Deep Belief Networks (DBN)</span>
+                        <span class="pub-keyword">Artificial Neural Networks (ANN)</span>
+                        <span class="pub-keyword">Complex Tool Paths</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1016/j.jmapro.2021.09.055" target="_blank" rel="noopener" class="pub-link doi">
+                            <i class="fas fa-external-link-alt"></i> DOI
+                        </a>
+                        <a href="https://doi.org/10.1016/j.jmapro.2021.09.055" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> Full Paper
+                        </a>
+                        <a href="https://scholar.google.com/scholar?q=Tool+Wear+Remaining+Useful+Life+Micro-Milling+Complex+Tool+Paths+Neural+Networks+Bagri" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                    </div>
+                </div>
+                <div class="pub-visual pv-pub1">
+                    <svg viewBox="0 0 260 260" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="pg1" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3"/>
+                                <stop offset="100%" style="stop-color:#0f0f2e;stop-opacity:0"/>
+                            </radialGradient>
+                        </defs>
+                        <circle cx="130" cy="130" r="110" fill="url(#pg1)"/>
+                        <!-- Tool wear curve -->
+                        <polyline points="20,220 50,215 80,210 100,200 115,185 125,165 135,140 148,110 162,80 175,60 190,50 210,45 240,42" fill="none" stroke="rgba(99,102,241,0.7)" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Wear regions -->
+                        <line x1="100" y1="30" x2="100" y2="230" stroke="rgba(99,102,241,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+                        <line x1="160" y1="30" x2="160" y2="230" stroke="rgba(99,102,241,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+                        <text x="58" y="240" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(139,92,246,0.6)">Region I</text>
+                        <text x="128" y="240" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(139,92,246,0.6)">Region II</text>
+                        <text x="200" y="240" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(139,92,246,0.6)">Region III</text>
+                        <!-- Axes -->
+                        <line x1="20" y1="230" x2="245" y2="230" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                        <line x1="20" y1="230" x2="20" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                        <!-- Axis labels -->
+                        <text x="130" y="258" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(255,255,255,0.35)">Cutting Length</text>
+                        <text x="8" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(255,255,255,0.35)" transform="rotate(-90, 8, 130)">Tool Wear (μm)</text>
+                        <!-- DBN accuracy badge -->
+                        <rect x="155" y="90" width="80" height="28" rx="5" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+                        <text x="195" y="108" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="rgba(52,211,153,0.9)">93–99% acc.</text>
+                    </svg>
+                    <p style="font-size: 0.7rem; color: var(--text-3); margin-top: 12px; text-align: center; font-family: var(--font-mono);">Tool Wear Curve</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- ── PUBLICATION 2 ── -->
+        <article class="pub-card fade-up">
+            <div class="pub-card-inner">
+                <div class="pub-content">
+                    <div class="pub-journal-badge">
+                        <i class="fas fa-book-open"></i> Journal of Intelligent Manufacturing
+                    </div>
+                    <h2 class="pub-title">
+                        Online Tool Condition Monitoring in Micromilling Using LSTM
+                    </h2>
+                    <p class="pub-authors">
+                        Ashish Manwar, Alwin Varghese,
+                        <span class="self">Sumant Bagri</span>,
+                        Suhas S. Joshi
+                    </p>
+                    <p class="pub-meta">
+                        <span><i class="fas fa-journal-whills"></i> Vol. 36, No. 2, pp. 935–955, Springer</span>
+                        <span><i class="far fa-calendar-alt"></i> December 21, 2023</span>
+                        <span><i class="fas fa-fingerprint"></i> DOI: 10.1007/s10845-023-02273-3</span>
+                    </p>
+                    <details class="pub-abstract-section" open>
+                        <summary class="pub-abstract-toggle">
+                            <i class="fas fa-align-left" style="margin-right: 6px; font-size: 0.7rem;"></i> Abstract
+                        </summary>
+                        <p class="pub-abstract-text">
+                            This work proposes a novel approach for high-precision online tool condition monitoring in
+                            micro-milling using cutting force signals, correlating dominant frequency variations with tool
+                            condition across the complete tool life cycle, and validating the approach across both straight
+                            and circular tool paths. LSTM networks were employed to model dominant frequency variations in
+                            micro-milling, enabling <strong>high-precision online monitoring without interrupting the
+                            machining process</strong>. The paper extends the prior work on complex tool paths by focusing
+                            on real-time, continuous monitoring — a critical requirement for Industry 4.0-compliant smart
+                            manufacturing systems targeting micro-mold and die production applications.
+                        </p>
+                    </details>
+                    <div class="pub-keywords">
+                        <span class="pub-keyword">LSTM</span>
+                        <span class="pub-keyword">Online Tool Condition Monitoring</span>
+                        <span class="pub-keyword">Micro-Milling</span>
+                        <span class="pub-keyword">Cutting Force Signals</span>
+                        <span class="pub-keyword">Time-Series Deep Learning</span>
+                        <span class="pub-keyword">Industry 4.0</span>
+                        <span class="pub-keyword">Smart Manufacturing</span>
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.1007/s10845-023-02273-3" target="_blank" rel="noopener" class="pub-link doi">
+                            <i class="fas fa-external-link-alt"></i> DOI
+                        </a>
+                        <a href="https://doi.org/10.1007/s10845-023-02273-3" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> Full Paper
+                        </a>
+                        <a href="https://scholar.google.com/scholar?q=Online+Tool+Condition+Monitoring+Micromilling+LSTM+Manwar+Bagri" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                    </div>
+                </div>
+                <div class="pub-visual pv-pub2">
+                    <svg viewBox="0 0 260 260" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="pg2" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.25"/>
+                                <stop offset="100%" style="stop-color:#0d1b2a;stop-opacity:0"/>
+                            </radialGradient>
+                        </defs>
+                        <circle cx="130" cy="130" r="110" fill="url(#pg2)"/>
+                        <!-- Time series signal (cutting force) -->
+                        <polyline points="20,130 35,120 45,140 58,115 70,145 82,118 92,135 102,112 112,148 122,108 132,142 142,105 152,145 162,100 170,140 180,110 190,135 200,118 212,128 225,125 240,130" fill="none" stroke="rgba(6,182,212,0.7)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- LSTM cell illustration -->
+                        <rect x="85" y="160" width="90" height="60" rx="8" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+                        <!-- Gates -->
+                        <circle cx="105" cy="185" r="8" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.5)" stroke-width="1"/>
+                        <circle cx="130" cy="185" r="8" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.5)" stroke-width="1"/>
+                        <circle cx="155" cy="185" r="8" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.5)" stroke-width="1"/>
+                        <text x="105" y="188.5" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(103,232,249,0.8)">σ</text>
+                        <text x="130" y="188.5" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(103,232,249,0.8)">σ</text>
+                        <text x="155" y="188.5" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(103,232,249,0.8)">σ</text>
+                        <text x="130" y="208" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="rgba(103,232,249,0.7)">LSTM Cell</text>
+                        <!-- Frequency markers -->
+                        <line x1="20" y1="100" x2="240" y2="100" stroke="rgba(6,182,212,0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+                        <line x1="20" y1="155" x2="240" y2="155" stroke="rgba(6,182,212,0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+                        <!-- Axes -->
+                        <line x1="20" y1="155" x2="240" y2="155" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+                        <text x="130" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="rgba(255,255,255,0.3)">Cutting Force Signal</text>
+                    </svg>
+                    <p style="font-size: 0.7rem; color: var(--text-3); margin-top: 12px; text-align: center; font-family: var(--font-mono);">LSTM Time-Series</p>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <p>© 2025 Sumant Bagri. Built with care.</p>
+        <p>Toronto, Canada 🍁</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

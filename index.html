@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumant Bagri — Robotics & AI Software Engineer</title>
+    <meta name="description" content="Sumant Bagri — Software Engineer specializing in robotics, computer vision, and AI systems. Currently at Ocado Technology building warehouse automation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-mark">SB</div>
+            Sumant Bagri
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="career.html">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="rant.html">Rant</a>
+            <a href="resume.html" class="nav-cta">Resume</a>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+        <div class="hero-text">
+            <p class="hero-eyebrow hero-text-1">Software Engineer · Robotics · AI</p>
+            <h1 class="hero-text-2">Sumant <span class="gradient-text">Bagri</span></h1>
+            <p class="hero-role hero-text-3">Building the perception & intelligence layer for autonomous robots</p>
+            <p class="hero-description hero-text-4">
+                I'm a Software Engineer II at Ocado Technology, developing 3D perception
+                pipelines that enable autonomous pick-and-place robots to operate with
+                high throughput, reliability, and uptime in next-generation warehouse facilities.
+                My work sits at the intersection of computer vision, robotics software, and
+                machine learning systems.
+            </p>
+            <div class="hero-actions hero-text-5">
+                <a href="career.html" class="btn-primary">
+                    <i class="fas fa-briefcase"></i> View My Work
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+            <div class="hero-social hero-text-5">
+                <a href="https://github.com/SumantBagri" target="_blank" rel="noopener" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sumantbagri" target="_blank" rel="noopener" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:sbagri.sumant@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="resume.html" title="Resume">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Portrait + Navigation Wheel -->
+        <div class="hero-portrait-wrap hero-portrait">
+
+            <!-- SVG: orbit ring + connector lines -->
+            <!--
+                Container: 500×500, portrait center: (250,250)
+                Portrait ring radius (edge): ~163px
+                Orbit radius (node centers): 205px
+                Nodes at 72° intervals from top:
+                  1 About   –90°  → (250,  45)
+                  2 Skills  –18°  → (445, 187)
+                  3 Vision   54°  → (371, 416)
+                  4 Hobbies 126°  → (129, 416)
+                  5 Contact 198°  → ( 55, 187)
+            -->
+            <svg class="pnav-orbit-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dashed orbit ring -->
+                <circle cx="250" cy="250" r="205" fill="none"
+                    stroke="rgba(59,130,246,0.1)" stroke-width="1" stroke-dasharray="5,7"/>
+                <!-- Second faint ring -->
+                <circle cx="250" cy="250" r="222" fill="none"
+                    stroke="rgba(59,130,246,0.04)" stroke-width="1"/>
+                <!-- Connector lines: portrait edge → node dot edge -->
+                <!-- Node 1 – About (top) -->
+                <line x1="250" y1="87" x2="250" y2="62"
+                    stroke="rgba(59,130,246,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+                <!-- Node 2 – Skills (top-right) -->
+                <line x1="405" y1="200" x2="429" y2="192"
+                    stroke="rgba(99,102,241,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+                <!-- Node 3 – Vision (bottom-right) -->
+                <line x1="346" y1="382" x2="361" y2="402"
+                    stroke="rgba(6,182,212,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+                <!-- Node 4 – Hobbies (bottom-left) -->
+                <line x1="154" y1="382" x2="139" y2="402"
+                    stroke="rgba(16,185,129,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+                <!-- Node 5 – Contact (top-left) -->
+                <line x1="95" y1="200" x2="71" y2="192"
+                    stroke="rgba(139,92,246,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+                <!-- Small dots at portrait edge intersections -->
+                <circle cx="250" cy="87" r="2.5" fill="rgba(59,130,246,0.6)"/>
+                <circle cx="405" cy="200" r="2.5" fill="rgba(99,102,241,0.6)"/>
+                <circle cx="346" cy="382" r="2.5" fill="rgba(6,182,212,0.6)"/>
+                <circle cx="154" cy="382" r="2.5" fill="rgba(16,185,129,0.6)"/>
+                <circle cx="95"  cy="200" r="2.5" fill="rgba(139,92,246,0.6)"/>
+            </svg>
+
+            <!-- Portrait ring -->
+            <div class="portrait-ring">
+                <div class="portrait-inner">
+                    <img src="assets/portrait.jpeg" alt="Sumant Bagri" />
+                </div>
+            </div>
+
+            <!-- Navigation nodes -->
+            <nav class="portrait-nav" aria-label="Section navigation">
+                <!-- Node 1: About — top (250, 45) -->
+                <a href="#about" class="pnav-node pnav-top" style="left:250px; top:45px;"
+                   aria-label="About section">
+                    <div class="pnav-dot"><i class="fas fa-user"></i></div>
+                    <span class="pnav-label">About</span>
+                </a>
+                <!-- Node 2: Skills — top-right (445, 187) -->
+                <a href="#skills" class="pnav-node pnav-tr" style="left:445px; top:187px;"
+                   aria-label="Skills section">
+                    <div class="pnav-dot" style="color:var(--violet-light);"><i class="fas fa-code"></i></div>
+                    <span class="pnav-label">Skills</span>
+                </a>
+                <!-- Node 3: Vision — bottom-right (371, 416) -->
+                <a href="#vision" class="pnav-node pnav-br" style="left:371px; top:416px;"
+                   aria-label="Vision section">
+                    <div class="pnav-dot" style="color:var(--cyan-light);"><i class="fas fa-rocket"></i></div>
+                    <span class="pnav-label">Vision</span>
+                </a>
+                <!-- Node 4: Hobbies — bottom-left (129, 416) -->
+                <a href="#hobbies" class="pnav-node pnav-bl" style="left:129px; top:416px;"
+                   aria-label="Hobbies section">
+                    <div class="pnav-dot" style="color:var(--emerald-light);"><i class="fas fa-heart"></i></div>
+                    <span class="pnav-label">Life</span>
+                </a>
+                <!-- Node 5: Contact — top-left (55, 187) -->
+                <a href="#contact" class="pnav-node pnav-tl" style="left:55px; top:187px;"
+                   aria-label="Contact section">
+                    <div class="pnav-dot" style="color:var(--violet-light);"><i class="fas fa-envelope"></i></div>
+                    <span class="pnav-label">Contact</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="section-header fade-up">
+            <p class="eyebrow">About</p>
+            <h2>Field of Work & Background</h2>
+            <span class="section-divider"></span>
+        </div>
+        <div class="about-grid">
+            <div class="about-card fade-up fade-up-delay-1">
+                <p>
+                    My work sits at the frontier of <strong>robotics software, computer vision, and applied AI</strong>.
+                    At Ocado Technology, I lead the development of modular 3D perception pipelines
+                    that guide autonomous robotic arms in warehouse automation — building systems that
+                    must be reliable, fast, and resilient enough to operate 24/7 in production environments.
+                    My stack spans deep learning inference (PyTorch, TensorRT), 3D spatial
+                    computation (Open3D, PhysX), high-performance services (C++, Go, gRPC, Docker), and
+                    robotics middleware (ROS2).
+                </p>
+            </div>
+            <div class="about-card fade-up fade-up-delay-2">
+                <p>
+                    Before Ocado, I engineered <strong>GPU-accelerated collision detection</strong> for 6-DOF
+                    manipulators (65–70× CPU speedup), spent nearly two years at <strong>Flow Traders</strong>
+                    in Hong Kong building deterministic sub-microsecond HFT infrastructure, and built ML
+                    pipelines at Disney Interactive and IIT Bombay research labs.
+                </p>
+                <p style="margin-top: 12px;">
+                    I hold an <strong>MScAC in AI</strong> from the University of Toronto (4.0/4.0 GPA)
+                    and a <strong>dual B.Tech + M.Tech in Mechanical Engineering</strong>
+                    from <strong>IIT Bombay</strong> (8.6/10.0 GPA).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section-header fade-up">
+            <p class="eyebrow">Capabilities</p>
+            <h2>Skills</h2>
+            <span class="section-divider"></span>
+        </div>
+        <div class="skills-split fade-up">
+            <!-- Hard Skills -->
+            <div>
+                <div class="skills-split-heading">Hard Skills</div>
+                <div class="skills-grid-compact">
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon blue"><i class="fas fa-code"></i></div>
+                            <span class="skill-group-title">Languages</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span><span class="skill-tag">Go</span>
+                            <span class="skill-tag">C++</span><span class="skill-tag">CUDA</span>
+                            <span class="skill-tag">TypeScript</span><span class="skill-tag">MATLAB</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon violet"><i class="fas fa-brain"></i></div>
+                            <span class="skill-group-title">ML / AI</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span><span class="skill-tag">TensorRT</span>
+                            <span class="skill-tag">ONNX</span><span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">scikit-learn</span><span class="skill-tag">Mask2Former</span>
+                            <span class="skill-tag">LSTM</span><span class="skill-tag">ResNet</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon cyan"><i class="fas fa-robot"></i></div>
+                            <span class="skill-group-title">Robotics</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ROS2</span><span class="skill-tag">MoveIt2</span>
+                            <span class="skill-tag">Open3D</span><span class="skill-tag">PhysX</span>
+                            <span class="skill-tag">Bullet3</span><span class="skill-tag">OpenGL</span>
+                            <span class="skill-tag">Kedro</span><span class="skill-tag">SolidWorks</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon emerald"><i class="fas fa-server"></i></div>
+                            <span class="skill-group-title">Infrastructure</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span><span class="skill-tag">Nomad</span>
+                            <span class="skill-tag">Kubernetes</span><span class="skill-tag">gRPC</span>
+                            <span class="skill-tag">CI/CD</span><span class="skill-tag">Ansible</span>
+                            <span class="skill-tag">Airflow</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon amber"><i class="fas fa-database"></i></div>
+                            <span class="skill-group-title">Data & Protocols</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span><span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">ELK Stack</span><span class="skill-tag">Modbus</span>
+                            <span class="skill-tag">IO-Link</span><span class="skill-tag">BigQuery</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-group-header">
+                            <div class="skill-group-icon blue"><i class="fas fa-tools"></i></div>
+                            <span class="skill-group-title">Dev Tools</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span><span class="skill-tag">pytest</span>
+                            <span class="skill-tag">gtest</span><span class="skill-tag">OpenMP</span>
+                            <span class="skill-tag">SIMD/SIMT</span><span class="skill-tag">DPDK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Soft Skills -->
+            <div>
+                <div class="skills-split-heading">Soft Skills</div>
+                <div class="soft-skills-list">
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">🧭</span>
+                        <div class="ss-body">
+                            <h4>Technical Leadership</h4>
+                            <p>Project lead, architecture authority, ADRs</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">🤝</span>
+                        <div class="ss-body">
+                            <h4>Cross-Functional Collaboration</h4>
+                            <p>Hardware, software & product integration</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">📣</span>
+                        <div class="ss-body">
+                            <h4>Stakeholder Management</h4>
+                            <p>Trade-off comms, alignment & updates</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">🔬</span>
+                        <div class="ss-body">
+                            <h4>Systems Design</h4>
+                            <p>Scalable, production-grade architecture</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">📚</span>
+                        <div class="ss-body">
+                            <h4>Knowledge Sharing</h4>
+                            <p>Tech talks, docs, and team mentoring</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-row">
+                        <span class="ss-icon">⚙️</span>
+                        <div class="ss-body">
+                            <h4>Code Quality Advocacy</h4>
+                            <p>Pair programming, reviews, testing culture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== VISION ===================== -->
+<section class="vision section" id="vision">
+    <div class="container">
+        <div class="section-header fade-up">
+            <p class="eyebrow">Long-Term Vision</p>
+            <h2>AI, Robotics & the Future of Humanity</h2>
+            <span class="section-divider"></span>
+        </div>
+        <div class="vision-compact fade-up">
+            <div class="vision-highlight">
+                <p>
+                    "My vision is a world where intelligent machines take on the dangerous, repetitive,
+                    and physically grueling work that currently costs people their health, time, and
+                    dignity — freeing them to be more human."
+                </p>
+            </div>
+            <div class="vision-text">
+                <p>
+                    We are at the beginning of the most consequential technological transition in human history.
+                    Autonomous systems — robots that see, reason, and act — are crossing the threshold from
+                    controlled lab environments into the messy, unpredictable real world. This isn't about
+                    replacing humans. It's about designing the right systems for the right tasks: the warehouse
+                    worker whose back gives out at 45, the nurse spending four hours on logistics a robot could
+                    handle, the inspector walking through hazardous environments daily. These are the
+                    problems I want to solve — not as benchmarks, but as deployed, production-grade systems
+                    that actually reach people.
+                </p>
+                <p>
+                    My long-term ambition is to work on robotic systems that operate in unstructured
+                    environments with human-level adaptability — in healthcare, disaster response,
+                    construction, and agriculture. The path there runs through better perception, smarter
+                    planning, safer human-robot interaction, and AI that is not just capable but
+                    <em>trustworthy</em>. I intend to spend my career on that path.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== HOBBIES ===================== -->
+<section class="section" id="hobbies">
+    <div class="container">
+        <div class="section-header fade-up">
+            <p class="eyebrow">Outside the Terminal</p>
+            <h2>What Keeps Me Human</h2>
+            <span class="section-divider"></span>
+        </div>
+        <div class="hobbies-compact">
+            <div class="hobby-compact-card fade-up fade-up-delay-1">
+                <div class="hobby-icon">🎮</div>
+                <h3>Video Games</h3>
+                <p>Approach RPGs with the same dedication as system design — the lore matters, and no, I will not rush the story.</p>
+            </div>
+            <div class="hobby-compact-card fade-up fade-up-delay-2">
+                <div class="hobby-icon">🏊</div>
+                <h3>Swimming</h3>
+                <p>Something meditative about staring at the bottom of a pool for 45 minutes — half the time I'm debugging code in my head.</p>
+            </div>
+            <div class="hobby-compact-card fade-up fade-up-delay-3">
+                <div class="hobby-icon">🏋️</div>
+                <h3>The Gym</h3>
+                <p>My ongoing attempt to prove robotics engineers can also have functional skeletal systems. Some problems can't be solved with an algorithm.</p>
+            </div>
+            <div class="hobby-compact-card fade-up fade-up-delay-1">
+                <div class="hobby-icon">⛷️</div>
+                <h3>Learning to Ski</h3>
+                <p>Currently in what I generously call the "controlled descent" phase. The pizza wedge and I have a complicated relationship.</p>
+            </div>
+            <div class="hobby-compact-card fade-up fade-up-delay-2">
+                <div class="hobby-icon">❤️</div>
+                <h3>Time with My Wife</h3>
+                <p>The best part of every day. She has a talent for reminding me when a problem doesn't actually require a distributed systems solution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== IMPACT STATEMENT ===================== -->
+<section class="impact section">
+    <div class="container">
+        <div class="impact-card fade-up">
+            <div class="quote-mark">"</div>
+            <p>
+                If you are someone who is passionate about <strong>robotics, artificial intelligence,
+                and autonomous systems</strong> and cares about building technology that meaningfully
+                improves human lives, creates safer working conditions, and pushes the boundaries of
+                what machines can do in service of people — <strong>let's connect and build a better
+                future for humanity.</strong>
+            </p>
+            <br />
+            <p>
+                Even if you're not in my domain — I genuinely enjoy learning how people in completely
+                different fields are carving out their own impact on the world, and swapping notes
+                on everything from career pivots to life lessons learned the hard way. My inbox is
+                always open.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact" style="background: var(--surface);">
+    <div class="container">
+        <div class="section-header fade-up">
+            <p class="eyebrow">Let's Connect</p>
+            <h2>Get In Touch</h2>
+            <span class="section-divider"></span>
+            <p style="margin-top: 12px;">
+                Whether it's a collaboration, an opportunity, or just a conversation —
+                I'd love to hear from you.
+            </p>
+        </div>
+        <div class="contact-grid">
+            <a href="mailto:sbagri.sumant@gmail.com" class="contact-item fade-up fade-up-delay-1">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-info">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value">sbagri.sumant@gmail.com</p>
+                </div>
+                <i class="fas fa-arrow-right" style="color: var(--text-3); font-size: 0.8rem;"></i>
+            </a>
+            <a href="tel:+14374224187" class="contact-item fade-up fade-up-delay-2">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-info">
+                    <p class="contact-label">Phone</p>
+                    <p class="contact-value">+1 (437) 422-4187</p>
+                </div>
+                <i class="fas fa-arrow-right" style="color: var(--text-3); font-size: 0.8rem;"></i>
+            </a>
+            <a href="https://linkedin.com/in/sumantbagri" target="_blank" rel="noopener" class="contact-item fade-up fade-up-delay-3">
+                <div class="contact-icon" style="background: rgba(10,102,194,0.15); color: #60a5fa;">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-label">LinkedIn</p>
+                    <p class="contact-value">linkedin.com/in/sumantbagri</p>
+                </div>
+                <i class="fas fa-arrow-right" style="color: var(--text-3); font-size: 0.8rem;"></i>
+            </a>
+            <a href="https://github.com/SumantBagri" target="_blank" rel="noopener" class="contact-item fade-up fade-up-delay-1">
+                <div class="contact-icon" style="background: rgba(255,255,255,0.06); color: var(--text-2);">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-info">
+                    <p class="contact-label">GitHub</p>
+                    <p class="contact-value">github.com/SumantBagri</p>
+                </div>
+                <i class="fas fa-arrow-right" style="color: var(--text-3); font-size: 0.8rem;"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <div class="footer-inner">
+        <p>© 2025 Sumant Bagri. Built with care.</p>
+        <p>Toronto, Canada 🍁</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

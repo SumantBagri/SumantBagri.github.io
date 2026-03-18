@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rant — Sumant Bagri</title>
+    <meta name="description" content="Technical blog posts and life observations by Sumant Bagri." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .rant-page-wrap {
+            min-height: calc(100vh - var(--nav-h) - 80px);
+            padding-top: var(--nav-h);
+            display: flex;
+            flex-direction: column;
+        }
+        .rant-page-hero {
+            padding: 64px 0 48px;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+        }
+        .rant-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 64px 24px;
+        }
+        .rant-empty-card {
+            max-width: 620px;
+            width: 100%;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 56px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .rant-empty-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
+        }
+        .rant-status-dot {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            background: rgba(245,158,11,0.1);
+            border: 1px solid rgba(245,158,11,0.3);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--amber);
+            letter-spacing: 0.05em;
+            margin-bottom: 28px;
+        }
+        .rant-status-dot::before {
+            content: '';
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--amber);
+            animation: pulse-amber 2s ease-in-out infinite;
+        }
+        @keyframes pulse-amber {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+        .rant-empty-card .big-icon { font-size: 3.5rem; margin-bottom: 24px; }
+        .rant-empty-card h2 { font-size: 1.6rem; color: var(--text); margin-bottom: 16px; }
+        .rant-empty-card .desc {
+            font-size: 0.95rem;
+            color: var(--text-2);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .rant-empty-card .desc strong { color: var(--text); }
+        .ideas-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-3);
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
+        .idea-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: left;
+        }
+        .idea-card {
+            padding: 14px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: border-color var(--transition);
+        }
+        .idea-card:hover { border-color: var(--border-accent); }
+        .idea-card .idea-tag {
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 5px;
+        }
+        .idea-card .idea-tag.tech { color: var(--blue); }
+        .idea-card .idea-tag.life { color: var(--violet); }
+        .idea-card p {
+            font-size: 0.8rem;
+            color: var(--text-3);
+            line-height: 1.5;
+        }
+        .rant-coming-soon {
+            margin-top: 32px;
+            font-size: 0.82rem;
+            color: var(--text-3);
+            font-family: var(--font-mono);
+        }
+        .rant-coming-soon span { color: var(--emerald); }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-mark">SB</div>
+            Sumant Bagri
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="career.html">Career</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="rant.html" class="active">Rant</a>
+            <a href="resume.html" class="nav-cta">Resume</a>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="rant-page-wrap">
+    <!-- PAGE HERO -->
+    <div class="rant-page-hero">
+        <div class="container">
+            <p class="eyebrow">Blog & Observations</p>
+            <h1>Rant</h1>
+            <p>
+                A dump for thoughts I can't keep inside. Part technical, part human.
+                Occasionally both at the same time.
+            </p>
+        </div>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="rant-main">
+        <div class="rant-empty-card">
+            <div class="rant-status-dot">Brewing</div>
+
+            <div class="big-icon">🤔</div>
+
+            <h2>The Rant Jar is Empty.<br />For Now.</h2>
+
+            <p class="desc">
+                Turns out having <strong>opinions about everything</strong> and
+                <strong>time to write them down</strong> are two very different things.
+                I'm working on the latter. The former has never been in short supply.
+            </p>
+            <p class="desc">
+                This space will eventually be filled with a chaotic mix of technical deep-dives,
+                unsolicited takes on the state of robotics and AI, and completely unqualified
+                observations about life, career, and the art of convincing yourself that
+                this codebase is "actually pretty clean."
+            </p>
+
+            <div class="ideas-title">Topics currently rattling around in my head</div>
+            <div class="idea-grid">
+                <div class="idea-card">
+                    <div class="idea-tag tech">Technical</div>
+                    <p>Why most "production-ready" robotics stacks are three duct-tape patches away from disaster</p>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-tag life">Life</div>
+                    <p>What IIT → HFT → Robotics taught me about learning things that don't exist yet</p>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-tag tech">Technical</div>
+                    <p>Latency is a lifestyle: lessons from sub-microsecond trading applied to robot perception</p>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-tag life">Life</div>
+                    <p>The surprisingly deep connection between learning to ski and learning a new programming language</p>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-tag tech">Technical</div>
+                    <p>gRPC in production: the good, the bad, and the "why is this blocking my thread"</p>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-tag life">Life</div>
+                    <p>On the strange privilege of caring deeply about your work — and how not to let it eat you</p>
+                </div>
+            </div>
+
+            <p class="rant-coming-soon">
+                <span>// TODO:</span> find 45 uninterrupted minutes. ship one post. repeat.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <p>© 2025 Sumant Bagri. Built with care.</p>
+        <p>Toronto, Canada 🍁</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
