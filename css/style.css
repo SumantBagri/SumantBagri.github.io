@@ -1039,8 +1039,7 @@ footer {
 }
 @media (max-width: 768px) {
     :root { --nav-h: 60px; }
-    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-    .hero-portrait-wrap { order: -1; }
+    .hero-inner { grid-template-columns: 1fr; gap: 32px; }
     .portrait-ring { width: 220px; height: 220px; }
     .about-grid { grid-template-columns: 1fr; }
     .about-full { grid-column: auto; }
@@ -1240,4 +1239,6 @@ footer {
 @media (max-width: 768px) {
     .hobbies-compact { grid-template-columns: repeat(2, 1fr); }
     .skills-grid-compact { grid-template-columns: 1fr; }
+    .hero-portrait-wrap { order: 1; width: 240px; height: 240px; }
+    .portrait-ring { width: 200px; height: 200px; }
 }
