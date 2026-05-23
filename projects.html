@@ -83,8 +83,45 @@
     <div class="container">
         <div class="projects-grid">
 
-            <!-- ── PROJECT 1: Diffusion Models on Edge ── -->
+            <!-- ── PROJECT 1: LLM Inference Benchmark Dashboard ── -->
             <article class="project-card fade-up">
+                <div class="project-visual pv-llmbench"></div>
+                <div class="project-body">
+                    <div class="project-institution">
+                        <i class="fas fa-university"></i> Personal Project
+                    </div>
+                    <h2 class="project-title">LLM Inference Benchmark Dashboard</h2>
+                    <p class="project-description">
+                        Config-driven benchmarking framework comparing <strong>vLLM, HuggingFace Transformers, and llama.cpp</strong>
+                        inference backends across throughput, time-to-first-token (TTFT), and VRAM — with a live
+                        Plotly Dash dashboard backed by SQLite. Evaluated <strong>Mistral-7B-Instruct-v0.3</strong> across
+                        <strong>4 quantization configurations</strong> (AWQ 4-bit, BitsAndBytes 4-bit, GGUF Q4_K_M, GGUF Q8_0)
+                        and <strong>3 prompt length categories</strong>, reporting p50/p95/p99 latency distributions and mean throughput.
+                    </p>
+                    <details class="project-details">
+                        <summary><i class="fas fa-chevron-down" style="margin-right: 4px; font-size:0.7rem;"></i> Key Technical Highlights</summary>
+                        <ul class="project-highlights">
+                            <li>Config-driven experiment framework iterating the full Cartesian product of (backends × quantizations × prompt categories × runs) from a single config.yaml, writing each BenchmarkResult to SQLite in real time for live dashboard visualisation.</li>
+                            <li>Three swappable inference backend adapters — VLLMBackend (HTTP client to Dockerised vLLM server), HFBackend (HuggingFace Transformers with BitsAndBytes 4-bit), and LlamaCppBackend (llama-cpp-python with GPU layer offload) — all behind a common BaseBackend ABC with context-manager cleanup to prevent VRAM fragmentation.</li>
+                            <li>Captured per-generation metrics including TTFT, end-to-end latency, tokens/sec, and peak VRAM delta using time.perf_counter(); aggregated over n runs to report p50/p95/p99 latency distributions and mean throughput.</li>
+                            <li>Live Plotly Dash dashboard with four interactive charts — throughput bar, TTFT/latency box plots, VRAM-vs-throughput scatter, and prompt-length scaling curve — auto-refreshing every 10 seconds via dcc.Interval.</li>
+                            <li>Containerised with Docker Compose: vLLM server container (CUDA 12.4), benchmark runner, and dashboard sharing a bind-mounted SQLite results volume for one-command startup.</li>
+                            <li>Used LangChain as a unified prompt abstraction layer across all three backends, isolating raw inference engine performance as the only experimental variable.</li>
+                        </ul>
+                    </details>
+                    <div class="project-stack">
+                        <span class="project-tag">Python</span><span class="project-tag">vLLM</span><span class="project-tag">HuggingFace Transformers</span><span class="project-tag">llama.cpp</span><span class="project-tag">LangChain</span><span class="project-tag">Plotly Dash</span><span class="project-tag">SQLite</span><span class="project-tag">Docker</span><span class="project-tag">Docker Compose</span><span class="project-tag">Mistral-7B</span><span class="project-tag">AWQ 4-bit</span><span class="project-tag">GGUF</span><span class="project-tag">BitsAndBytes</span><span class="project-tag">YAML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SumantBagri/llm-inference-benchmark-dashboard" target="_blank" rel="noopener" class="project-link primary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── PROJECT 2: Diffusion Models on Edge ── -->
+            <article class="project-card fade-up fade-up-delay-1">
                 <div class="project-visual pv-diffusion">
                     <!-- Neural network SVG illustration -->
                     <svg class="pv-svg" viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -155,18 +192,18 @@
                         <a href="https://github.com/SumantBagri/Diffusion-Model-Inference-on-Edge" target="_blank" rel="noopener" class="project-link primary">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Diffusion-Model-Inference-on-Edge/raw/master/CSC2231_Project_Report.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-file-alt"></i> Report
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Diffusion-Model-Inference-on-Edge/raw/master/poster/CSC2231%20Project%20Poster.pptx.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-image"></i> Poster
                         </a>
                     </div>
                 </div>
             </article>
 
-            <!-- ── PROJECT 2: Brain Tumor MRI ── -->
-            <article class="project-card fade-up fade-up-delay-1">
+            <!-- ── PROJECT 3: Brain Tumor MRI ── -->
+            <article class="project-card fade-up">
                 <div class="project-visual pv-mri">
                     <svg class="pv-svg" viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                         <defs>
@@ -228,18 +265,18 @@
                         <a href="https://github.com/SumantBagri/Image-Synthesis-for-Brain-Tumor-MRI-using-GAN-aggregation" target="_blank" rel="noopener" class="project-link primary">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Image-Synthesis-for-Brain-Tumor-MRI-using-GAN-aggregation/blob/main/poster_and_report/imaging_project_report/report.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-file-alt"></i> Report
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Image-Synthesis-for-Brain-Tumor-MRI-using-GAN-aggregation/blob/main/poster_and_report/imaging_project_2022_poster.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-image"></i> Poster
                         </a>
                     </div>
                 </div>
             </article>
 
-            <!-- ── PROJECT 3: Path Planners ── -->
-            <article class="project-card fade-up">
+            <!-- ── PROJECT 4: Path Planners ── -->
+            <article class="project-card fade-up fade-up-delay-1">
                 <div class="project-visual pv-pathplan">
                     <svg class="pv-svg" viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                         <defs>
@@ -312,15 +349,15 @@
                         <a href="https://github.com/SumantBagri/Sampling-Based-Asymptotically-Optimal-Path-Planning-Algorithms" target="_blank" rel="noopener" class="project-link primary">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Sampling-Based-Asymptotically-Optimal-Path-Planning-Algorithms/blob/master/final_report/report.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-file-alt"></i> Report
                         </a>
                     </div>
                 </div>
             </article>
 
-            <!-- ── PROJECT 4: Autonomous Mazerunner ── -->
-            <article class="project-card fade-up fade-up-delay-1">
+            <!-- ── PROJECT 5: Autonomous Mazerunner ── -->
+            <article class="project-card fade-up">
                 <div class="project-visual pv-omnibot">
                     <svg class="pv-svg" viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                         <defs>
@@ -385,7 +422,7 @@
                         <a href="https://github.com/SumantBagri/Autonomous-Navigation-and-Obstacle-Avoidance-Robot" target="_blank" rel="noopener" class="project-link primary">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/SumantBagri/Autonomous-Navigation-and-Obstacle-Avoidance-Robot/blob/master/MIE444%20-%20Team%205%20Final%20Report.pdf" target="_blank" rel="noopener" class="project-link">
                             <i class="fas fa-file-alt"></i> Report
                         </a>
                     </div>
